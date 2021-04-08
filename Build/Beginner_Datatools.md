@@ -1,9 +1,6 @@
 <img width="807" alt="image" src="https://user-images.githubusercontent.com/80533280/113942840-8cbaaa00-97cf-11eb-9791-b5c3f852c81d.png">
 
 
-
-
-
 # Inspecting your Data for Bias: Basic Overview for Beginners
 
 In this section, we presents a high-level overview of tools and techniques for debiasing data that are accesible to beginners with minimal machine learning background. For a more hands-on approach, please consult the [Intermediate Data Tools](https://github.com/XDgov/MLBias/blob/main/Build/Intermediate/Intermediate_DataTools.md) or [Advanced Data Tools](https://github.com/XDgov/MLBias/blob/main/Build/Advanced/Advanced_DataTools.md) sections elsewhere in this respository. 
@@ -16,11 +13,39 @@ In this section, we presents a high-level overview of tools and techniques for d
 - [How to Address Data Bias](#how-to-address-data-bias)
 
 
+Before proceeding, note that the general fairness paradigm applied in this resource kit is one that seeks to make the entire AI/ML system fair, and to ensure fair overall outcomes as defined for the AI/ML use case.  In this paradigm, bias and fairness inspection should to span the entire pipeline, and is necessary but not sufficient for ensuring unbiased overall outcomes. 
 
 
 ### Sources of Data Bias
 
-[As noted in Engstrom et al. (2020)](https://law.stanford.edu/wp-content/uploads/2020/02/ACUS-AI-Report.pdf), agencies lack protocols around ensuring diversity of AI/ML practitioners, and none of the largest federal agencies with active AI programs had any working protocols and processes to assess the potential impact of bias, as of 2020. The lack of practical tools and guidance to complement high-level recommendations like the [OMB](https://www.omb.gov) Guidance for Regulation of Artificial Intelligence Applications, which recommends agencies employ a tiered AI/ML risk management approach, suggests that agency workforces are not currently best configured to plan to navigate the bias landscape. Compounding this is lack of sufficiently diverse AI/ML, across demographic and other classficiations, which is troubling when studies suggest that the identity-based experiences of vulnerability resulting from diverse lived experiences have been associated [in recent research (McDonald and Pan, 2020)](https://dl.acm.org/doi/abs/10.1145/3415218) with complex thinking about AI, such as a heightened ability to reason about fairness across groups as well bias. 
+First, what is *data bias* in the context of machine learning in government contexts?  In short, data bias is a data quality issue -- missing values, incorrect values, information distoration, mislabeled data -- that systematically affects a subpopulation, such as a demographic group (women ages 65+) or sub-class of collected data (post offices in New York City specifically)  Where does it come from? For a beginner's view, there are a few major ways bias can be introduced into the machine learning pipeline in the form of data quality issues:
+
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/80533280/114029026-1b1e4280-9847-11eb-9afc-c4acb5a43645.png">
+
+
+**need to recreate this image in a quick file, don't want to use someone else's image where***
+
+
+
+-**Data Source** Where are we obtaining our data? If we have not prepared the data ourselves and are acquiring it from a vendor, or combining our data with databases from a vendor or even other agency, there is always the possibility that this data contains some quality issues, bad data, incorrectly labeled fields, and so on. These quality issues may affect specific subpopulations (i.e., all weight values for left-handed women might be inflated by ten because of a recording error), and thus a lack of data quality uniformity could conceivably introduce bias into our pipeline.
+
+Subtypes of data source error include issues in data collection. For example, if our survey contains biased language that alienates a certain group of people, or induces them to respond a certain way, our data collection is might include gaps or incorrect data about a demographic group or population. Another common type of data source bias arises from data collection technique rests and rests on biased assumptions -- as a crude example, if we assume that women with children are not typically leaders, we might design a sampling technique for a leadership survey that does not include mothers, or a survey that does not allow women leaders to indicate family sizes over two people.   
+
+
+
+The way the target variable/label is defined and each data point is labeled might represent disparities between groups.
+
+
+Differential measurement accuracy across groups (labeling quality).
+
+A variable can be positively correlated with target variable within the majority group but negatively on other groups.
+
+Police Internal Investigations for example
+
+
+
+
+
 
 ### Why Address Data bias
 
