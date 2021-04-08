@@ -18,7 +18,7 @@ Before proceeding, note that the general fairness paradigm applied in this resou
 
 ### Sources of Data Bias
 
-First, what is *data bias* in the context of machine learning in government contexts?  In short, data bias is a data quality issue -- missing values, incorrect values, information distoration, mislabeled data -- that systematically affects a subpopulation, such as a demographic group (women ages 65+) or sub-class of collected data (post offices in New York City specifically)  Where does it come from? For a beginner's view, there are a few major ways bias can be introduced into the machine learning pipeline in the form of data quality issues:
+First, what is *data bias* in the context of machine learning in government contexts?  In short, data bias is a data quality issue -- missing values, incorrect values, information distoration, mislabeled data -- that systematically affects a subpopulation, such as a demographic group (women ages 65+) or sub-class of collected data (post offices in New York City specifically).  Where does data bias arise in machine learning contexts? For a beginner's view, there are a few major ways bias can be introduced into the machine learning pipeline in the form of data quality issues:
 
 <img width="689" alt="image" src="https://user-images.githubusercontent.com/80533280/114029026-1b1e4280-9847-11eb-9afc-c4acb5a43645.png">
 
@@ -26,8 +26,7 @@ First, what is *data bias* in the context of machine learning in government cont
 **need to recreate this image in a quick file, don't want to use someone else's image where***
 
 
-
--**Data Source** Where are we obtaining our data? If we have not prepared the data ourselves and are acquiring it from a vendor, or combining our data with databases from a vendor or even other agency, there is always the possibility that this data contains some quality issues, bad data, incorrectly labeled fields, and so on. These quality issues may affect specific subpopulations (i.e., all weight values for left-handed women might be inflated by ten because of a recording error), and thus a lack of data quality uniformity could conceivably introduce bias into our pipeline.
+-**Data Source Bias** Where are we obtaining our data? If we have not prepared the data ourselves and are acquiring it from a vendor, or combining our data with databases from a vendor or even other agency, there is always the possibility that this data contains some quality issues, bad data, incorrectly labeled fields, and so on. These quality issues may affect specific subpopulations (i.e., all weight values for left-handed women might be inflated by ten because of a recording error), and thus a lack of data quality uniformity could conceivably introduce bias into our pipeline.
 
 Subtypes of data source error include issues in data collection. For example, if our survey contains biased language that alienates a certain group of people, or induces them to respond a certain way, our data collection is might include gaps or incorrect data about a demographic group or population. Another common type of data source bias arises from data collection technique rests and rests on biased assumptions -- as a crude example, if we assume that women with children are not typically leaders, we might design a sampling technique for a leadership survey that does not include mothers, or a survey that does not allow women leaders to indicate family sizes over two people.   
 
@@ -53,26 +52,20 @@ A significant proportion of AI/ML progress in government is fueled by agency acq
 
 ### How to Address Data Bias
 
-Government agencies typically collect their own data and build their own databases, but sometimes acquire or supplement their data from outside vendors, whose data 
-might not be as well-vetted, or supplement their datasets with data from other agencies, whose data their are less familiar with.  There are a host of well-known survey-related biases, from sampling biases to nonrespondent bias to question design that biases respondents toward a particular answer, that can skew internal data such that machine learning work is biased in some way.  A lack of familiarity with datasets, such as those acquired from outside vendors or agency, makes it even more likely to encounter data quality issues that go unrecognize and taint ML training and testing sets during the later ML development lifecycle.  
+We will address in-depth bias and fairness metrics and techniques in the Intermediate and Advanced Data Tools sections. Broadly, there are a few central techqniues for addressing dataset bias: 
 
-A futher source of bias is methods commonly used for missing value imputation that are based on incorrect assumptions about whether data is missing at random. Some of these methods are known to distort demographic group proportions. As **XYZ** note, methods for multi-class classification for missing value imputation the most frequent classes as target variables, leading to a distortion for small population groups, because membership in these groups will never be imputed. As illustrated in paper **XYZ** suppose that some individuals identify as non-binary. Because the system only supports male, female, and unspecified as options, these individuals will leave gender unspecified. If mode imputation is used, then their gender will be set to male. A more sophisticated imputation method will still use values from the active domain of the feature, setting the missing values of gender to either male or female. This example illustrates that bias can arise from an incomplete or incorrect choice of data representation.  Another pitfall is a form that has home address as a field. A homeless person will leave this value unspecified, and it is incorrect to attempt to impute it. While dealing with null values is known to be difficult and is already considered among the issues in data cleaning, the needs of responsible data management introduce new problems. 
-
-Data filtering and cleaning are minefields for dataset bias as well. As noted in **XYZ**,  when combining tables from the same dataset, OR combining datasets from varying sources, sdoing elections and joins can arbitrarily change the proportion of protected groups (e.g., for certain age groups) even if they do not directly use the sensitive attribute (e.g., age) as part of the predicate or of the join key. This change in proportion may be unintended and is important to detect, particularly when this happens during one of many preprocessing steps in the ML pipeline. During model development, Ann might have filtered the data by zip code or county to get a sample that is easier to work with. Demographic attributes such as age and income are highly correlated with places of residency, so such a seemingly innocent filtering operation might have heavily biased the data.
-
-Yet another source of bias worth pointing out for agencies hoping to do NLP work is using pre-trained word embeddings. An example given in  **reference ABC** is that of code might replace a textual name feature with the corresponding vector from a word embedding that is missing for rare, non-Western names -- possible if there is a lack of representative data in a training set. If we then filter out records for which no embedding was found, we may disproportionately remove individuals from specific ethnic groups.
-
-Unsound experimentation pre-development. Design and evaluation of ML models is a difficult and tedious undertaking, much more challenging in some aspects than conventional software development, and requires data scientists to engage in heavy experimentation at different stages of the development lifecycle.  It is unfortunately easy to make subtle mistakes that can heavily impact the quality of the resulting model.
+-Fix the input data: If missing datasets or incorrect labels are the cause of bad data quality, fix those errors manually or programmatically. 
+-Generate more data: If bad data needs to be expunged, or one class of data is underrepresented in the dataset, [generate synthetic data](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w45/Jaipuria_Deflating_Dataset_Bias_Using_Synthetic_Data_Augmentation_CVPRW_2020_paper.pdf) with the expected distribution to balance out the dataset. 
+-Resample and/or reweight protected groups: Changing weights assigned to protected class features, or adding/removing dataset elements with these features, in order to ensure sufficient representation inthe 
+-Post-data collection: Choose, train, optimize, and build a fair model, and do post-dhc adjustments to de-bias the output of your ML system -- See materials [here](https://github.com/XDgov/MLBias/blob/main/Build/Advanced/Advanced_Bias_Evaluation.md) and 
+[here](https://github.com/XDgov/MLBias/blob/main/Build/Advanced/MachineLearningPipeline.md) within this resource kit for more details. 
 
 
-### Model Selection Development and Training
 
-For guidance on model selection and traning, please refer to the Intermediate ML Pipleine guide here. 
-
-### Model Development and Beyond
+We direct the reader to an outstanding set of external tools that can walk the reader through the bias inspection and reduction for machine learning data in one's machine learning training data: 
 
 
-For guidance on model selection and traning, please refer to the Advanced ML Pipeline guide here. 
+- [Aequitas](http://www.datasciencepublicpolicy.org/aequitas) Open source python toolkit developed by Carnegie Mellon/University of Chicago researchers. This kit includes a no-code tool that allows the user to upload a dataset, define populations of interest (i.e., a protected class as defined by the Department of Labor when collecting data for an employment study), define fairness metrics that *make sense given the agency or program mission* (i.e., ensure that left-handed students from Mississippi receive, proportionally, the same total amount of grand aid as left-handed students from every other state), and generate an in-depth report of biases contained in one's datasets.  
 
-
+-[fairmodels](https://github.com/cran/fairmodels) -- an R language package that uses model visualizations to help users identify bias. In particular, it includes pre-processing algorithms that try to mitigate the bias between specific subgroups through inference from data.
 
