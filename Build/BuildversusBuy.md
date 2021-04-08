@@ -24,7 +24,7 @@ There are several points in the general acquisition process [(RAND, 2021)](https
 - Pre-acquisition Stage: 
 - Vendor selection stage
 - Model development
-- System testing
+- System deployment and maintenance
 
 In the **pre-acquisition** stage, which for general software acquisitions at the Census Bureau [entails an assessment of need, analysis of requirement, competitive assessment, and source selection planning](https://www.census.gov/about/business-opportunities/resources/faaps.html), a misunderstanding or mischaracterization of the AI/ML problem for which software is being procured could introduce bias into the system output, particularly if there is a mismatch between model and use case. Lack of involvement of subject matter or domain experts in software acqusitions teams -- which is quite common in many large oragnizations -- can exacerbate these issues, as can general misunderstandings of AI/ML application context, or a lack of sufficient diversity in the acquiring or acquisition planning team, which is generally known to contribute to biased outcomes in AI/ML work. Acquisition teams may be less likely to have training in AI/ML ethics than actual practitioners, and simply not apply bias mitigation thinking to the acquisition until it is too late. Thus, these teams might not incorporate essential bias and fairness assessment and mitigation guidance into the design documentation, software requiremnts, and early documentation so critical in deciding the eventual solution acquired, and its deployment.    
 
