@@ -4,6 +4,8 @@
 
 - [Acquisition Bias: Where?](#acquisition-bias-where)
 
+- [Looking Ahead](#looking-ahead)
+
 
 ## Understanding Bias in the AI Acquisition Process
 
@@ -39,32 +41,11 @@ The **vendor selection** has several points of vulnerability with respect to AI/
 
 After vendors are selected, the **model development** phase begins (if the software is not an off-the-shelf solution). At this point, some of the same biases discussed throughout the build section of this resource and toolkit can seep into the model, especially if best practices discussed throughout those resources are not deployed. As a review, the data (training or test) could be polluted or incomplete, overrepresent or underrepresent a vulnerable population because of bad or biased data collection processes or bad data governance. The model might be developed inappropriately for the use case, and initial tests of performance and accuracy could be badly or incompletely run (particularly if vendors are not presented with a highly specific and practical bias-focused testing plan by the acquistion team). Further its errors might not be well aligned with the true impact in resource, financial, or human terms. Either situation could lead vendors and development teams to deploy a bad, potentially biased model that should never have been put into production, and would never have been deployed by a skilled internal team staffed with federal agency subject matter expert.  
 
-• Training or test data set samples could be unbalanced.
-• The costs of different kinds of errors could be incorrectly estimated.
-• The training data could be unrepresentative of the affected population or contain historical bias.
+The final step of the process is a stage of processes we call **system deployment and maintenance**. In this stage, there are again several possible points of bias-related weakness. First, processes downstream of initial model testing, including model verification or validation, might not encompass bias issues. The results of the model might lack intepretability or explainability, leading to misapplication or bias misinterpretation fo results. Further, there could be misconfigurations and technical failures in the system deployment (e.g., failure of model deployment APIs), or shift in distribution of data compared to training data, rendering the model's predictions incorrect and possibly biased. Another possible issue at this stage could be model degration from lack of maintenance and performance monitoring, which can lead to biased AI system outputs, which could happen if these activities are not specified in a vendor contract, or not related to the internal development team after handoff. Also, if there is no ongoing calibration of model output to practical decisions, the model could generate output that does not make sense for real-world application, leading to biased application of the ML system's results by policymakers and nontechnical practitioners [(Rand Institute, 2021)](https://www.rand.org/content/dam/rand/pubs/perspectives/PEA800/PEA862-1/RAND_PEA862-1.pdf).  
 
 
-- Model development
-- System testing
-- 
+# Looking Ahead
 
-
-
-In conclusion, despite all of the recent progress made in AI ethics, some researchers have opined that federal procurement law remains a "dangerous blind spot" in the race to deploy ethical ML in algorithmic govenrnance settings [(Rubenstein, 2021)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3731106). We encourage AI/ML engineers, data scientists, and other federal governemnt stakeholders to weigh the consequences of unaddressed sources of bias in the software acquistion pipeline as they decide whether to build or acquire ML tools. 
-
-
-
-In this section, we walk through common sources of bias along the machine learning pipeline, to prepare users for a later discussions of how to assess and mitigate bias along the workflow. 
-
-- [Institutional Knowledge and Configuration](#institutional-knowledge-and-configuration) 
-
--  [Vendor or software selection](#vendor-selection)
-
-- [Data Collection and Preparation](#data-collection-and-preparation)
-
-- [Model Selection, Development, and Training](#model-selection-development-and-training)
-
-- [Model Deployment and Beyond](#model-development-and-beyond)
-
+In conclusion, despite all of the recent progress made in AI ethics, some researchers have opined that federal procurement law remains a "dangerous blind spot" in the race to deploy ethical ML in algorithmic govenrnance settings [(Rubenstein, 2021)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3731106). We encourage AI/ML engineers, data scientists, and other federal government stakeholders to weigh the consequences of unaddressed sources of bias in the software acquistion pipeline as they decide whether to build or acquire ML tools. This resource will be updated as agencies remodel their acquistion processes and guidelines to address issues of AI ethics, bias and fairness.
 
 
