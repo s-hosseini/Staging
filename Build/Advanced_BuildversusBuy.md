@@ -19,7 +19,7 @@ There exists a significant literature and many guidelines addressing the build/b
 
 ## Acquisition Bias: Where?
 
-There are several points in the general acquisition process [RAND, 2021](https://www.rand.org/content/dam/rand/pubs/perspectives/PEA800/PEA862-1/RAND_PEA862-1.pdf) at which bias can arise. We break these down as follows:  
+There are several points in the general acquisition process [(RAND, 2021)](https://www.rand.org/content/dam/rand/pubs/perspectives/PEA800/PEA862-1/RAND_PEA862-1.pdf) at which bias can arise. We break these down as follows:  
 
 - Pre-acquisition Stage: 
 - Vendor selection stage
