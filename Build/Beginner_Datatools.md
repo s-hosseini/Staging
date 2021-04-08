@@ -23,34 +23,25 @@ First, what is *data bias* in the context of machine learning in government cont
 [Source](https://docs.google.com/presentation/d/17o_NzplYua5fcJFuGcy1V1-5GFAHk7oHAF4dN44NkUE/edit#slide=id.g8d5290cc44_0_278)
 
 
--**Data Source Bias** Where are we obtaining our data? If we have not prepared the data ourselves and are acquiring it from a vendor, or combining our data with databases from a vendor or even other agency, there is always the possibility that this data contains some quality issues, bad data, incorrectly labeled fields, and so on. These quality issues may affect specific subpopulations (i.e., all weight values for left-handed women might be inflated by ten because of a recording error), and thus a lack of data quality uniformity could conceivably introduce bias into our pipeline.
+-**Data Source Bias**: Where are we obtaining our data? If we have not prepared the data ourselves and are acquiring it from a vendor, or combining our data with databases from a vendor or even other agency, there is always the possibility that this data contains some quality issues, bad data, incorrectly labeled fields, and so on. These quality issues may affect specific subpopulations (i.e., all weight values for left-handed women might be inflated by ten because of a recording error), and thus a lack of data quality uniformity could conceivably introduce bias into our pipeline.
 
 Subtypes of data source error include issues in data collection. For example, if our survey contains biased language that alienates a certain group of people, or induces them to respond a certain way, our data collection is might include gaps or incorrect data about a demographic group or population. Another common type of data source bias arises from data collection technique rests and rests on biased assumptions -- as a crude example, if we assume that women with children are not typically leaders, we might design a sampling technique for a leadership survey that does not include mothers, or a survey that does not allow women leaders to indicate family sizes over two people.   
 
+**Outcome Bias**: As [Rodolfa et al](https://textbook.coleridgeinitiative.org/chap-bias.html#sec:biassources) explain, a separate source of bias inherent arises with the *labels*, or measured outcomes, of the population in your dataset, and the way they are defined and applied. Consider an example of transportation monitoring, in which a stretch of road that is more completely covered with high-quality traffic sensors is more likely to be found to have a high number of accidents, than a stretch of road with faulty sensor or less coverage, simply because more accidents are observed. Imagine the agency objective is to determine which streteches are road are most dangerous with respect to accidents, and therefore most in need of funding for rehabilitation. Using number of accidents measured in this way to when a transportation department is really trying to determine which stretches of highway are inherently dangerous, introduces a bias correlated with number of sensors (and possibly wealthy of an area), and can bias allocation of public works funding toward areas that simply have more or better systems of traffic sensors rather than a genuine need. The label or outcome we really want is true acccidents, not simply number of accidents we happen to capture.
 
 
-The way the target variable/label is defined and each data point is labeled might represent disparities between groups.
-
-
-Differential measurement accuracy across groups (labeling quality).
-
-A variable can be positively correlated with target variable within the majority group but negatively on other groups.
-
-Police Internal Investigations for example
-
-
+**Data Pipeline Bias** Technical issues like faulty data ingestion, issues with dataset storage, misrouting of datasets, incorrect parsing of datasets, failure to automate consistent data transformation processes from day to day, can all distort and add bias to even perfect datasets collected and cleaned upstream. 
 
 
 ### How to Address Data Bias
 
 We will address in-depth bias and fairness metrics and techniques in the Intermediate and Advanced Data Tools sections. Broadly, there are a few central techqniues for addressing dataset bias: 
 
--Fix the input data: If missing datasets or incorrect labels are the cause of bad data quality, fix those errors manually or programmatically. 
--Generate more data: If bad data needs to be expunged, or one class of data is underrepresented in the dataset, [generate synthetic data](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w45/Jaipuria_Deflating_Dataset_Bias_Using_Synthetic_Data_Augmentation_CVPRW_2020_paper.pdf) with the expected distribution to balance out the dataset. 
--Resample and/or reweight protected groups: Changing weights assigned to protected class features, or adding/removing dataset elements with these features, in order to ensure sufficient representation inthe 
--Post-data collection: Choose, train, optimize, and build a fair model, and do post-dhc adjustments to de-bias the output of your ML system -- See materials [here](https://github.com/XDgov/MLBias/blob/main/Build/Advanced/Advanced_Bias_Evaluation.md) and 
+- Fix the input data: If missing datasets or incorrect labels are the cause of bad data quality, fix those errors manually or programmatically. 
+- Generate more data: If bad data needs to be expunged, or one class of data is underrepresented in the dataset, [generate synthetic data](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w45/Jaipuria_Deflating_Dataset_Bias_Using_Synthetic_Data_Augmentation_CVPRW_2020_paper.pdf) with the expected distribution to balance out the dataset. 
+- Resample and/or reweight protected groups: Changing weights assigned to protected class features, or adding/removing dataset elements with these features, in order to ensure sufficient representation inthe 
+- Do post-data collection: Choose, train, optimize, and build a fair model, and do post-dhc adjustments to de-bias the output of your ML system -- See materials [here](https://github.com/XDgov/MLBias/blob/main/Build/Advanced/Advanced_Bias_Evaluation.md) and 
 [here](https://github.com/XDgov/MLBias/blob/main/Build/Advanced/MachineLearningPipeline.md) within this resource kit for more details. 
-
 
 
 We direct the reader to an outstanding set of external tools that can walk the reader through the bias inspection and reduction for machine learning data in one's machine learning training data. Here are two notable toolkits, one of which is written in R, and one of the which is written in Python: 
