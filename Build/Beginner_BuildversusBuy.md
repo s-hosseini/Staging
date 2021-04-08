@@ -1,12 +1,19 @@
- Bias throughout the Pipeline
+<img width="687" alt="image" src="https://user-images.githubusercontent.com/80533280/113980982-1fca0300-9815-11eb-8c91-9ebf4ec42f09.png">
+
+
+
+
+## Build versus Buy Decisions
+
+To build (in house) versus to buy (commercial off-the-shelf or bespoke solution, from a vendor or contracting company) software decisions are common among large organizations, and [government agencies](https://www.acquisition.gov/policy-network) at [every level](https://doit.maryland.gov/SDLC/Documents/Build%20Versus%20Buy.pdf) are no exception. These decisions take on an added degree of complexity, however, when dealing with AI/ML solutions, and taking into account issues of bias and fairness.  
+
+Government build/buy decisionmaking has additional complexity compared to the private sector because of the government's increased concern with fairness and bias standards, and [its mandate across different program areas, agencies, and settings](https://www.epa.gov/laws-regulations/summary-executive-order-12898-federal-actions-address-environmental-justice) -- [sometimes a legislative mandate] (https://home.treasury.gov/footer/privacy-act/computer-matching-programs) -- to ensure that protected or vulnerable subpopulations are treated fairly, and not subject to disproportionate risk or harm compared to other demographic groups or subpopulations.  
+
+There exists significant documentation addressing the build/buy paradigm for software acquisitions. We expand that view by outlining specific bias and fairness considerations that figure into the machine learning acquisition decisions.   
 
 In this section presents a high-level view of AI/ML bias, as might be encountered by a typical government practitioner. To this end, this section walks the reader through common sources of bias along the length of the machine learning pipeline, extended here to include composition of research and development and implementation teams before development even begins, and application of results to inform policies or programs at the tail end of the process. 
 
-<img width="1076" alt="image" src="https://user-images.githubusercontent.com/80533280/113875846-29a42580-9785-11eb-86d0-d02bd2be2f70.png">
 
-
-
-Source of the above image: https://arxiv.org/pdf/1901.10002.pdf 
 
 
 In this section, we walk through common sources of bias along the machine learning pipeline, to prepare users for a later discussions of how to assess and mitigate bias along the workflow. 
