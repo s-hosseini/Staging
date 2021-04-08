@@ -8,8 +8,6 @@ In this section, we presents a high-level overview of tools and techniques for d
 
 - [Sources of Data Bias](#sources-of-data-bias) 
 
-- [Why Address Data Bias](#why-address-data-bias)
-
 - [How to Address Data Bias](#how-to-address-data-bias)
 
 
@@ -22,8 +20,7 @@ First, what is *data bias* in the context of machine learning in government cont
 
 <img width="689" alt="image" src="https://user-images.githubusercontent.com/80533280/114029026-1b1e4280-9847-11eb-9afc-c4acb5a43645.png">
 
-
-**need to recreate this image in a quick file, don't want to use someone else's image where***
+[Source](https://docs.google.com/presentation/d/17o_NzplYua5fcJFuGcy1V1-5GFAHk7oHAF4dN44NkUE/edit#slide=id.g8d5290cc44_0_278)
 
 
 -**Data Source Bias** Where are we obtaining our data? If we have not prepared the data ourselves and are acquiring it from a vendor, or combining our data with databases from a vendor or even other agency, there is always the possibility that this data contains some quality issues, bad data, incorrectly labeled fields, and so on. These quality issues may affect specific subpopulations (i.e., all weight values for left-handed women might be inflated by ten because of a recording error), and thus a lack of data quality uniformity could conceivably introduce bias into our pipeline.
@@ -44,12 +41,6 @@ Police Internal Investigations for example
 
 
 
-
-
-### Why Address Data bias
-
-A significant proportion of AI/ML progress in government is fueled by agency acquisitions of off-the-shelf software, and/or building of tools by outside vendors. Whether these software is trained and developed with data or even methods well-understood to the agency or the build and training process is less transparent, the vendor selection and software acquisition can be rife with sources of bias, leading to eventual unfairness. As recent work [from the RAND Institute](https://www.rand.org/content/dam/rand/pubs/perspectives/PEA800/PEA862-1/RAND_PEA862-1.pdf) suggests, language in vendor solicitation or criteria for selection could discourage diverse vendors, or unintentionally promote certain classes of applicants over others. The paper suggests assessment criteria should be in some fashion validated for equity, as it relates to both applications or respondents and solution proposals.  Another relevant source of bias could be selection of a vendor that is not equipped, or is not instructed by the proposal, to develop a bias assessment, monitoring, or mitigation. A third possible source of bias at this stage is incomplete or misguided articulation of agency goals for the potential acquisition, which could guide vendors to develop products that are developed for a different application entirely.
-
 ### How to Address Data Bias
 
 We will address in-depth bias and fairness metrics and techniques in the Intermediate and Advanced Data Tools sections. Broadly, there are a few central techqniues for addressing dataset bias: 
@@ -62,10 +53,10 @@ We will address in-depth bias and fairness metrics and techniques in the Interme
 
 
 
-We direct the reader to an outstanding set of external tools that can walk the reader through the bias inspection and reduction for machine learning data in one's machine learning training data: 
+We direct the reader to an outstanding set of external tools that can walk the reader through the bias inspection and reduction for machine learning data in one's machine learning training data. Here are two notable toolkits, one of which is written in R, and one of the which is written in Python: 
 
 
 - [Aequitas](http://www.datasciencepublicpolicy.org/aequitas) Open source python toolkit developed by Carnegie Mellon/University of Chicago researchers. This kit includes a no-code tool that allows the user to upload a dataset, define populations of interest (i.e., a protected class as defined by the Department of Labor when collecting data for an employment study), define fairness metrics that *make sense given the agency or program mission* (i.e., ensure that left-handed students from Mississippi receive, proportionally, the same total amount of grand aid as left-handed students from every other state), and generate an in-depth report of biases contained in one's datasets.  
 
--[fairmodels](https://github.com/cran/fairmodels) -- an R language package that uses model visualizations to help users identify bias. In particular, it includes pre-processing algorithms that try to mitigate the bias between specific subgroups through inference from data.
+- [fairmodels](https://github.com/cran/fairmodels) -- an R language package that uses model visualizations to help users identify bias. In particular, it includes pre-processing algorithms that try to mitigate the bias between specific subgroups through inference from data.
 
