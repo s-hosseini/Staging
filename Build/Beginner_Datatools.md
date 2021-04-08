@@ -45,7 +45,7 @@ We will address in-depth bias and fairness metrics and techniques in the Interme
 [here](https://github.com/XDgov/MLBias/blob/main/Build/Advanced/MachineLearningPipeline.md) within this resource kit for more details. 
 
 
-We direct the reader to an outstanding set of external tools that can walk the reader through the bias inspection and reduction for machine learning data in one's machine learning training data. Here are two notable toolkits, one of which is written in R, and one of the which is written in Python: 
+We direct the reader to an outstanding set of external tools that can walk the reader through the bias inspection and reduction for machine learning data in one's machine learning training data. Here are three notebooks: 
 
 
 - [Aequitas](http://www.datasciencepublicpolicy.org/aequitas) A free, open source toolkit developed by Carnegie Mellon/University of Chicago researchers. This kit includes a no-code tool that allows the user to upload a dataset, define populations of interest (i.e., a protected class as defined by the Department of Labor when collecting data for an employment study), define fairness metrics that *make sense given the agency or program mission* (i.e., ensure that left-handed students from Mississippi receive, proportionally, the same total amount of grand aid as left-handed students from every other state), and generate an in-depth report of biases contained in one's datasets.  
