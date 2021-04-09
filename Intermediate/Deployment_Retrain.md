@@ -41,7 +41,7 @@ Fortunately, there are several new and emerging techniques to mitigate post-depl
 
 - Creating certification labels on ML resources (see also Google Model Cards): ML models should have certification labels with information on ML model characteristics (e.g., model purpose and limitation, accuracy and error rates, disaggregated evaluation statistics).
 
-Data sets used for training models also need to be clearly characterized for distribution statistics and limitations.
+- Data sets used for training models also need to be clearly characterized for distribution statistics and limitations.
 DHS can avoid harmful bias in its machine learning systems by establishing standards for measuring bias, weighing costs of biased outcomes, and providing workforce development for the emerging technologies. Label requirements should be standardized across an agency's components. Every ML model deployed
 by an agency unit should also have a routine scheduled recertification process. The standards for such certification should be guided by neutral or independent parties.
 
@@ -49,6 +49,6 @@ by an agency unit should also have a routine scheduled recertification process. 
 to continuously measure the performance of deployed ML decision aids. This includes evaluating and tracking the accuracy of the ML model (e.g., false positives and false negatives). The process also includes repeated audits for bias.
 Bias audits include disaggregated evaluation of ML models (e.g., measure model performance on different, relevant subdemographics; see **Mitchell et al., 2019**). The need for tracking can place specific demands on operations. For example, one might need to implement experimental design setups to try to estimate traditionally unobserved signals (e.g., false negatives, sensitive attributes of individuals).
 
-- impact assessments and continuous red-teaming: ML models should undergo extensive checks at each step to ensure quality control. This could be in the form of red-teaming or security tests. Where feasible, the use of model implementations can also enable more deeply robust external verification. The continuous application of red-teaming enables ongoing estimation of operational robustness to new ML security threats. Agencies should also require an algorithmic impact assessment **(Reisman et al., 2018).**
+- Impact assessments and continuous red-teaming: ML models should undergo extensive checks at each step to ensure quality control. This could be in the form of red-teaming or security tests. Where feasible, the use of model implementations can also enable more deeply robust external verification. The continuous application of red-teaming enables ongoing estimation of operational robustness to new ML security threats. Agencies should also require an algorithmic impact assessment **(Reisman et al., 2018).**
 
 For a discussion of directly applicable methods including analytical metric definition and links to code snippets and open source tooling, please see the [Advanced Bias Evaluation](https://github.com/XDgov/MLBias/blob/main/Build/Advanced/Advanced_Bias_Evaluation.md) section. 
