@@ -51,4 +51,4 @@ Bias audits include disaggregated evaluation of ML models (e.g., measure model p
 
 - impact assessments and continuous red-teaming: ML models should undergo extensive checks at each step to ensure quality control. This could be in the form of red-teaming or security tests. Where feasible, the use of model implementations can also enable more deeply robust external verification. The continuous application of red-teaming enables ongoing estimation of operational robustness to new ML security threats. Agencies should also require an algorithmic impact assessment **(Reisman et al., 2018).**
 
-For a discussion of directly applicable methods including analytical metric definition and links to code snippets and open source tooling, please see the Advanced Post-Deployment Methods section. 
+For a discussion of directly applicable methods including analytical metric definition and links to code snippets and open source tooling, please see the [Advanced Bias Evaluation](https://github.com/XDgov/MLBias/blob/main/Build/Advanced/Advanced_Bias_Evaluation.md) section. 
