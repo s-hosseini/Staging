@@ -11,7 +11,7 @@ There are two broad categories of bias that we might need to consider. The first
 A second broad category of bias, and that which we focus on in this document, is that of *technical bias.* Technical bias is the set of issues that arise because of shortcoming, failures, or misconfigurations of the technical system itself (data pipeline, deployment, retraining, etc.) and can, alarmingly, amplify (Friedman and Nissenbaum, 1998).  In this section, we focus on the implications of the last category of bias for post-deployment bias. 
 
 
-## Maintaining your model's "fairness" after deployment
+# Maintaining your model's "fairness" after deployment
 
 After putting an AI/ML model into production, it will typically require ongoing work and maintenance  to protect from the model's degradation of fairness and accurcy/performance, and further care to improve the model output.  As [Rodolfa et al. (2020)](https://textbook.coleridgeinitiative.org/chap-bias.html#sec:applications) and others observe, even after completing a rigorous series of checks and balances on ones data and methods in the pre-deployment stage, frequently "bad" or incorrect models with mistakes will be put into production. These bad production models are a starting point for answering the question of what one needs to measure and how models need to be tweaked before and after production, which, as has been emphaszied throughot this toolkit, is a highly case-specific endeavor. 
 
@@ -35,4 +35,20 @@ in that the human can step in to adjudicate or correct edge cases on which the m
 - After a model is deployed,
 it can be modified through software updates or patches. Following any such updates, an ML deci- sion aid must be reevaluated to identify potential bias. But the time between software upgrades can vary greatly, and conducting postupdate evalu- ations can involve significant costs and effort. Continual monitoring for bias could provide early insight into potential issues that can be addressed early on. Including ongoing auditing procedures in deployment documents could help ensure that Census and other agency programs actually mitigate the misuses and biases described.
 
+# Methods to Address Post-Deployment Bias
 
+Fortunately, there are several new and emerging techniques to mitigate post-deployment bias.
+
+- Creating certification labels on ML resources (see also Google Model Cards): ML models should have certification labels with information on ML model characteristics (e.g., model purpose and limitation, accuracy and error rates, disaggregated evaluation statistics).
+
+Data sets used for training models also need to be clearly charac- terized for distribution statistics and limitations.
+DHS can avoid harmful bias in its machine learning systems by establishing standards for measuring bias, weighing costs of biased outcomes, and providing workforce development for the emerging technologies. Label requirements should be standardized across an agency's components. Every ML model deployed
+by an agency unit should also have a routine scheduled recertification process. The standards for such certification should be guided by neutral or independent parties.
+
+- Performance tracking and disaggregated evaluation approach: Clear, consistent processes are required
+to continuously measure the performance of deployed ML decision aids. This includes evaluating and tracking the accuracy of the ML model (e.g., false positives and false negatives). The process also includes repeated audits for bias.
+Bias audits include disaggregated evaluation of ML models (e.g., measure model performance on different, relevant subdemographics; see **Mitchell et al., 2019**). The need for tracking can place specific demands on operations. For example, one might need to implement experimental design setups to try to estimate traditionally unobserved signals (e.g., false negatives, sensitive attributes of individuals).
+
+- impact assessments and continuous red-teaming: ML models should undergo exten- sive checks at each step to ensure quality control. This could be in the form of red-teaming or security tests. Where feasible, the use of model implementations can also enable more-robust external verification. The continuous application of red-teaming enables ongoing estimation of operational robustness to new ML security threats. DHS should also require an algorithmic impact assessment **(Reisman et al., 2018).**
+
+For a discussion of specific methods including metric development and links to code snippets and open source tooling, please see the Advanced Post-Deployment Methods section. 
