@@ -9,6 +9,7 @@ Navigate through the document using the following links:
 - [Ethical AI: A Shared Responsibility ](#ethical-ai-a-shared-responsibility)
 - [Machine Learning at Census ](#machine-learning-and-the-US-census-bureau)
 - [Principles of Ethical AI Systems in Government: A Practical View ](principles-of-ethical-ai-systems-in-government)
+- [Further Reading](further-reading)
 
 
 ## Introductory Concepts 
@@ -126,15 +127,7 @@ Trustworthy systems, as outlined in a response to a Federal Executive Order by t
 “Trustworthy AI systems,” as defined by the government’s “Plan for Federal Engagement in Developing AI Technical Standards and Related Tools,”  are those that meet a set of standards across several dimensions:  accuracy, explainability, resiliency, safety, reliability, objectivity, and security
 
 
-
  
-   
- 
- 
- 
- 
-
-
 
 Ethical AI
 
@@ -169,6 +162,8 @@ How might AI bias impact government contexts in particular?
 Equity in delivery of services
 Acquisition
 
+
+# Further Reading
 
 
 
