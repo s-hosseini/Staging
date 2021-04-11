@@ -88,9 +88,8 @@ y^
 
 <img width="402" alt="image" src="https://user-images.githubusercontent.com/80533280/114315080-444f0500-9acb-11eb-87db-df3d3ac3cd02.png">
 
-// https://docs.google.com/drawings/d/1N6hKXUiWYiW_M9M9tvCPJNXrB-w_TyY_yn_H-yA7Mr8/edit
 
-
+<!-- https://docs.google.com/drawings/d/1N6hKXUiWYiW_M9M9tvCPJNXrB-w_TyY_yn_H-yA7Mr8/edit -->
 
 # Machine Learning and the US Census Bureau
 
