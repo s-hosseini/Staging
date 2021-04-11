@@ -1,7 +1,8 @@
+<img width="137" alt="image" src="https://user-images.githubusercontent.com/80533280/114314505-fcc77980-9ac8-11eb-9f67-35f9c9eacc98.png">
 
 
 
-# Start here/Primer
+# Start here: Primer
 Explore the basics of AI Ethics and build a solid foundation for navigating potential bias in government contexts. 
 
 Navigate through the document using the following links: 
