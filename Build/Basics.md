@@ -1,5 +1,4 @@
-<img width="137" alt="image" src="https://user-images.githubusercontent.com/80533280/114314505-fcc77980-9ac8-11eb-9f67-35f9c9eacc98.png">
-
+<img width="107" alt="image" src="https://user-images.githubusercontent.com/80533280/114314548-36988000-9ac9-11eb-921d-835debe6a9b6.png">
 
 
 # Start here: Primer
