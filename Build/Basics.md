@@ -5,15 +5,15 @@
 Explore the basics of AI Ethics and build a solid foundation for navigating potential bias in government contexts. 
 
 Navigate through the document using the following links: 
-[Overview of Ethical AI: Introductory Concepts ](#introductory-concepts)
-[Ethical AI: A Shared Responsibility ](#ethical-ai-a-shared-responsibility)
-[Machine Learning at Census ](#machine-learning-and-the-US-census-bureau)
-[Principles of Ethical AI Systems in Government: A Practical View ](principles-of-ethical-ai-systems-in-government)
+- [Overview of Ethical AI: Introductory Concepts ](#introductory-concepts)
+- [Ethical AI: A Shared Responsibility ](#ethical-ai-a-shared-responsibility)
+- [Machine Learning at Census ](#machine-learning-and-the-US-census-bureau)
+- [Principles of Ethical AI Systems in Government: A Practical View ](principles-of-ethical-ai-systems-in-government)
 
 
 ## Introductory Concepts 
 
-In order to understand AI Ethics, it is necessary to understand a few fundamentals of artificial intelligence that 
+In order to understand AI Ethics material shared in this resource, it is essential to understand a few fundamentals terms. Some of the most important are highlighted below:
 
 Artificial intelligence: 
 
@@ -104,7 +104,9 @@ Description with Machine Learning:
 ## Machine Learning and the Census Bureau
 
 The Census Bureau, the principal agency in the US Federal Statistical System, collects a vast amount of data used in high-stakes decisions. Census data is used to decide how to allocate services like job training services, transportation resources, and education across communities, how to distribute Congressional seats to states, and helping people qualify for retirement benefits, and informs many other critical initiatives at the local, state, and federal levels.
+
 To extract value from this data, Census uses a range of computational tools and methods to analyze the data it collects across a range of data collection instruments. Some of these computational tools include machine learning methods, which can be used to automate and speed up time-consuming, costly tasks, and improve existing tools. Machine learning can also used complement a range of survey instruments and methodologies when coupled with the array of administrative and survey data from across agencies that the Census Bureau houses.   
+
 How is machine learning used at Census? Some examples of machine learning use cases across the Bureau are: Estimating people’s or businesses’ propensity to respond to surveys in certain Census tracts; building automatic classifiers for various survey elements, saving humans many hours of hand-coding; use satellite images to supplement traditional survey instruments in estimating population size and growth. Outside of survey-focused project work, Census could conceivably use several well-established machine learning techniques to create more robust search capabilities for public resources accessed through www.census.gov. 
 
 Building robust yet fair and unbiased AI, systems can seem challenging. Before going any further, we outline the general characteristics of “ethical” AI systems. 
