@@ -21,7 +21,7 @@ In order to understand AI Ethics material shared in this resource, it is essenti
 **Machine Learning**: Sometimes colloquially used interchangeably with artificial intelligence, machine learning describes a series of methods and systems in which 
 "learns" from input data to predict outcomes and draw inferences from new data it has never seen drawn from a similar distribution as the training data. For example, we can train a predictive model on job and college admission outcomes from last year's cohort of US high school students to try to predict what this year's cohort of US high school seniors will achieve.
 
-**Natural Language Processing**: 
+**Natural Language Processing**: An example common NLP task is sentiment analysis of user comments in a post-service survey to gauge user satisfaction with government services. Natural language processing is a branch of artificial intelligence, distinct from machine learning, describing a series of methods that enable the analysis, interpretation, and manipulation of various aspects of written and spoken human language. A closely-linked term is **Natural Language Generation**, which refers to the field encompassing various computer-based methods use dto generate "human" language. 
 
 Computer Vision: 
 
