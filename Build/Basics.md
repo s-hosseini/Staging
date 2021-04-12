@@ -33,7 +33,6 @@ In order to understand AI Ethics material shared in this resource, it is essenti
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/80533280/114404662-e62a2c80-9b73-11eb-90d6-adb4c34ea7be.png">
 
 
-
 **Deep Learning**: An artificial intelligence model that relies on multiple layers of neural networks --  collections of nodes modeled on neurons in the human brain -- each of which transforms the input data in progressively more abstract ways. Examples of deep learning networks are RNNs, or recurrent neural nets, used in language applications, and CNNs, or convolutional neural nets, which are used most commonly in computer vision applications. Deep learning's utility lies in the fact that these models automatically detect features, so that the user does not have to create or engineer them.
 
 **Model Training**: Training is the process of developing a model by exposing it to labeled examples (training data) in order for it to “learn” how the features relate to the labels.
@@ -43,7 +42,6 @@ In order to understand AI Ethics material shared in this resource, it is essenti
 **Features**: Input to an AI/ML model. For instance, features a model build to predict economic mobility of a population could include educational attainment and work history.  The process of extracting features from data, which could include complex processing, is known as **feature engineering.** Features can be categorical (a set of occupations) or continuous (income), and could also be images, such as in computer vision.
 
 **Labels**: What a model is trying to predict; model output. 
-
 
 **Bias**: In the AI Ethics sense, bias refers to errors introduced to an AI system because of bad data collection, cleaning, sampling, reporting, or other technical pipeline-related failures, or a general favoritism or unfairness introduced by either algorithm or data for or against some (sub)populations in the dataset. If a system for accessing government services relies on facial recognition technology, and the computer vision algorithms underlying this technology have not been trained on images of people with darker skin, then that technology might enact a bias against darker-skinned people trying to access that service, excluding them because it cannot recognize their faces.  
 
@@ -63,11 +61,11 @@ One reason this shared resources includes material for people across the spectru
 
 Most of our work throughout this toolkit reflects work in government, and therefore focuses primarily on machine learning and some natural language processing tasks.  
 
-The main categories of machine learning tasks are prediction, detection, and description, causal inference, and detection.  Detection is the identification of new, unusual types of events, data points, patterns, a set of techniques that might help Census identify dataset outliers that represent bad data collection practices, or fraudulent survey responses. Causal inference describes a series of methods that capture the relationship between data and outcomes, such as when one  determines whether switching to an online survey causes certain classes of businesses to not respond to surveys. This resource will focus on prediction and description, which have the most relevance to Census,  and civic good settings more broadly.
+The main categories of machine learning tasks are prediction, detection, and description, causal inference, and detection.  Detection is the identification of new, unusual types of events, data points, patterns, a set of techniques that might help Census identify dataset outliers that represent bad data collection practices, or fraudulent survey responses. Causal inference describes a series of methods that capture the relationship between data and outcomes, such as when one  determines whether switching to an online survey causes certain classes of businesses to not respond to surveys. This resource will focus on prediction and description, which have the most relevance to Census, and civic good settings more broadly.
 
-Prediction with Machine Learning: 
+Prediction with Machine Learning: Prediction involve determining the value of some element of a dataset that we do not already know. For instance, given the demographic growth history across 49 states, what do we think will be the demographic growth over the next year across the 50th state for which we have no data?
 
-Description with Machine Learning:  
+Description with Machine Learning:  Description tasks analyze properties of a dataset. An example of a descriptive task is summarizing text data, or clustering, which seeks to move unlabeled data we have not classified in any way into groupings ("clusters") of data that bear meaningful similarities. 
 
 ## Why do AI/ML at Census?
 
@@ -80,7 +78,6 @@ How is machine learning used at Census? Some examples of machine learning use ca
 AI/ML could also be leveraged to power operational effiency, such as with automatic mapping of skillsets or datasets around the Bureau as inferred directory and publication authoriship information;  automatic labelling of images and tables hosted on the Census website with captions using natural language generation based on transformers; and the rapid cleaning of data from disparate sources before combining into one dataset. 
 
 ## Bias, Fairness, and AI Ethical Concerns in Government
-
 
 Data collected by humans is imperfect. When there are missing or incorrect values, distorted information, or mislabeled data, these can interact with an AI system, which can also be incorrect becauase of human biases or tecnhnial issues, that create systematic inaccuracies that represent the world in a biased way. Because of the particulary sensititvies of work in the public sector, building trustworthy AI systems free of biases to the greatest possible extent is an enormously important undertaking. 
 
@@ -99,13 +96,13 @@ First, *Interpretability*: Interpretable AI systems are those that create output
 
 In other words, if a team at Census creates a model to predict future housing prices, and one of the features used to build the model is literacy rate, a (locally) interpretable model could be one for which a person can predict with reasonable confidence the change in housing prices that result from increasing the literacy rate in a geographic region.
 
-*Explainability*: Although used mistakenly as a synonym for “interpretability”, explainability is a distinct concept. Rather than model output, it relates to the internal structure of the model itself. If a human can explain how a model works and why, without relying on sensitivity of output as in interpretability, then we can call that model "explainable." Methods for assessing explainability can include statistical assessments. 
+Next is *Explainability*: Although used mistakenly as a synonym for “interpretability”, explainability is a distinct concept. Rather than model output, it relates to the internal structure of the model itself. If a human can explain how a model works and why, without relying on sensitivity of output as in interpretability, then we can call that model "explainable." Methods for assessing explainability can include statistical assessments. 
 
 One of the interesting aspects of explainability that we delve into elsewhere in this toolkit is the idea that there might be some tradeoff between explainability and accuracy, because simpler models tend to be more explainable in a sense. The existence of this tradeoff is debated within the AI research community, however.
 
-*Transparency* is the property of explainability that is attained by  using models that are easily interpreted or intuitive to humans -- for example, random forest or linear models.
+Third is *Transparency*, which is the property of explainability that is attained by  using models that are easily interpreted or intuitive to humans -- for example, random forest or linear models.
 
-*Trustworthiness*:  Trustworthy systems, as outlined in a response to a Federal Executive Order by the Secretary of Commerce, combines several of the above principles.
+Fourth is *Trustworthiness*:  Trustworthy systems, as outlined in a response to a Federal Executive Order by the Secretary of Commerce, combines several of the above principles.
 “Trustworthy AI systems,” as defined by the government’s [Plan for Federal Engagement in Developing AI Technical Standards and Related Tools](https://www.nist.gov/topics/artificial-intelligence/plan-federal-engagement-developing-ai-technical-standards-and-related), are those that meet a set of standards across several dimensions:  accuracy, explainability, resiliency, safety, reliability, objectivity, and security. Some of these standards are works in progress, and may vary by agency, problem setting, model type, various particulars of an application, etc. 
 
 Government, including untis of the Department of Commerce, has thought deeply about trustworthiness, including explainable AI, which will require specific guidance to agencies and federal contractors and vendors working with government to develop standards and guidance for ethics, privacy and so on, in collaboration with outside research organizations and academia, which have not yet converged on a consensus definition for explainability. DARPA's [Explainable AI program, XAI]https://www.darpa.mil/program/explainable-artificial-intelligence) endeavors to fund reseaerch and testing and training programs and certification standards for government tecnhnology. Establish Standards and Guidance to Navigate Risks.  
