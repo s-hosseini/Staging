@@ -16,11 +16,12 @@ Navigate through the document using the following links:
 
 In order to understand AI Ethics material shared in this resource, it is essential to understand a few fundamentals terms. Some of the most important are highlighted below:
 
-Artificial intelligence: 
+**Artificial intelligence**: A system composed of an algorithm or model that solves complex tasks, including those in the vision, language, and learning domains.
 
-Machine Learning: 
+**Machine Learning**: Sometimes colloquially used interchangeably with artificial intelligence, machine learning describes a series of methods and systems in which 
+"learns" from input data to predict outcomes and draw inferences from new data it has never seen drawn from a similar distribution as the training data. For example, we can train a predictive model on job and college admission outcomes from last year's cohort of US high school students to try to predict what this year's cohort of US high school seniors will achieve.
 
-Natural Language Processing: 
+**Natural Language Processing**: 
 
 Computer Vision: 
 
@@ -36,15 +37,13 @@ Labels: What a model is trying to predict; model output.
 
 Model Training: Training is the process of developing a model by exposing it to labeled examples (training data) in order for it to “learn” how the features relate to the labels.
 
+Bias: 
 
-Model Testing: 
-
-Model Evaluation: 
-
+Fairness: 
 
 
-An Algorithm is a set of rules that a machine follows to achieve a particular goal2. An algorithm can be considered as a recipe that defines the inputs, the output and all the steps needed to get from the inputs to the output. Cooking recipes are algorithms where the ingredients are the inputs, the cooked food is the output, and the preparation and cooking steps are the algorithm instructions.
-Machine Learning is a set of methods that allow computers to learn from data to make and improve predictions (for example cancer, weekly sales, credit default). Machine learning is a paradigm shift from "normal programming" where all instructions must be explicitly given to the computer to "indirect programming" that takes place through providing data.
+
+
 
 A Learner or Machine Learning Algorithm is the program used to learn a machine learning model from data. Another name is "inducer" (e.g. "tree inducer").
 A Machine Learning Model is the learned program that maps inputs to predictions. This can be a set of weights for a linear model or for a neural network. Other names for the rather unspecific word "model" are "predictor" or - depending on the task - "classifier" or "regression model". In formulas, the trained machine learning model is called 
