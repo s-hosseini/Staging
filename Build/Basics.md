@@ -8,13 +8,13 @@ Navigate through the document using the following links:
 - [Overview of Ethical AI: Introductory Concepts ](#introductory-concepts)
 - [Ethical AI: A Shared Responsibility ](#ethical-ai-a-shared-responsibility)
 - [Machine Learning and Government](#machine-learning-and-government)
-- [Why AI/ML at Census](#why-ai-ml-at-census)
+- [Why AI at Census?](#why-ai-at-census)
 - [Bias, Fairness, and AI Ethical Concerns in Government](#Bias-Fairness-and-AI-Ethical-Concerns-in-Government)
-- [Principles of Ethical AI Systems in Government: A Practical View ](principles-of-ethical-ai-systems-in-government)
+- [Principles of Ethical AI Systems in Government - A Practical View](principles-of-ethical-ai-systems-in-government)
 
 
 
-## Introductory Concepts 
+# Introductory Concepts 
 
 In order to understand AI Ethics material shared in this resource, it is essential to understand a few fundamentals terms. Some of the most important are highlighted below:
 
@@ -67,7 +67,7 @@ Prediction with Machine Learning: Prediction involve determining the value of so
 
 Description with Machine Learning:  Description tasks analyze properties of a dataset. An example of a descriptive task is summarizing text data, or clustering, which seeks to move unlabeled data we have not classified in any way into groupings ("clusters") of data that bear meaningful similarities. 
 
-## Why do AI/ML at Census?
+# Why AI at Census?
 
 The Census Bureau, the principal agency in the US Federal Statistical System, collects a vast amount of data used in high-stakes decisions. Census data is used to decide how to allocate services like job training services, transportation resources, and education across communities, how to distribute Congressional seats to states, and helping people qualify for retirement benefits, and informs many other critical initiatives at the local, state, and federal levels.
 
@@ -77,7 +77,7 @@ How is machine learning used at Census? Some examples of machine learning use ca
 
 AI/ML could also be leveraged to power operational effiency, such as with automatic mapping of skillsets or datasets around the Bureau as inferred directory and publication authoriship information;  automatic labelling of images and tables hosted on the Census website with captions using natural language generation based on transformers; and the rapid cleaning of data from disparate sources before combining into one dataset. 
 
-## Bias, Fairness, and AI Ethical Concerns in Government
+# Principles of Ethical AI Systems in Government
 
 Data collected by humans is imperfect. When there are missing or incorrect values, distorted information, or mislabeled data, these can interact with an AI system, which can also be incorrect becauase of human biases or tecnhnial issues, that create systematic inaccuracies that represent the world in a biased way. Because of the particulary sensititvies of work in the public sector, building trustworthy AI systems free of biases to the greatest possible extent is an enormously important undertaking. 
 
