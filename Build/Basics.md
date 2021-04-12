@@ -9,8 +9,7 @@ Navigate through the document using the following links:
 - [Ethical AI: A Shared Responsibility ](#ethical-ai-a-shared-responsibility)
 - [Machine Learning and Government](#machine-learning-and-government)
 - [Why AI at Census?](#why-ai-at-census)
-- [Bias, Fairness, and AI Ethical Concerns in Government](#Bias-Fairness-and-AI-Ethical-Concerns-in-Government)
-- [Principles of Ethical AI Systems in Government - A Practical View](principles-of-ethical-ai-systems-in-government)
+- [Principles of Ethical AI Systems in Government](principles-of-ethical-ai-systems-in-government)
 
 
 
@@ -105,7 +104,8 @@ Third is *Transparency*, which is the property of explainability that is attaine
 Fourth is *Trustworthiness*:  Trustworthy systems, as outlined in a response to a Federal Executive Order by the Secretary of Commerce, combines several of the above principles.
 “Trustworthy AI systems,” as defined by the government’s [Plan for Federal Engagement in Developing AI Technical Standards and Related Tools](https://www.nist.gov/topics/artificial-intelligence/plan-federal-engagement-developing-ai-technical-standards-and-related), are those that meet a set of standards across several dimensions:  accuracy, explainability, resiliency, safety, reliability, objectivity, and security. Some of these standards are works in progress, and may vary by agency, problem setting, model type, various particulars of an application, etc. 
 
-Government, including untis of the Department of Commerce, has thought deeply about trustworthiness, including explainable AI, which will require specific guidance to agencies and federal contractors and vendors working with government to develop standards and guidance for ethics, privacy and so on, in collaboration with outside research organizations and academia, which have not yet converged on a consensus definition for explainability. DARPA's [Explainable AI program, XAI]https://www.darpa.mil/program/explainable-artificial-intelligence) endeavors to fund reseaerch and testing and training programs and certification standards for government tecnhnology. Establish Standards and Guidance to Navigate Risks.  
+Government, including untis of the Department of Commerce, has thought deeply about trustworthiness, including explainable AI, which will require specific guidance to agencies and federal contractors and vendors working with government to develop standards and guidance for ethics, privacy and so on, in collaboration with outside research organizations and academia, which have not yet converged on a consensus definition for explainability. DARPA's 
+[Explainable AI program, XAI](https://www.darpa.mil/program/explainable-artificial-intelligence) endeavors to fund reseaerch and testing and training programs and certification standards for government tecnhnology. Establish Standards and Guidance to Navigate Risks.  
 
 National Institute of Standards, another unit of the Department of Commerce, has begun outlining standards for government AI, including ensuring ethical and trustworthy systems, as outlined in its evolving [Plan for Leadership in AI](https://www.nist.gov/system/files/documents/2019/08/10/ai_standards_fedengagement_plan_9aug2019.pdf). Contributing to this stream of policy work and research are NIST's recent Workshops on [Exploring AI Trustworthiness](https://www.nist.gov/news-events/events/2020/08/exploring-ai-trustworthiness-workshop-series-kickoff-webinar), [Bias in AI](https://www.nist.gov/news-events/events/2020/08/bias-ai-workshop), and [2021 Workshop on Explainable AI](https://www.nist.gov/news-events/events/2021/01/explainable-ai-workshop).  
 
