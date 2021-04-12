@@ -7,8 +7,9 @@ Explore the basics of AI Ethics and build a solid foundation for navigating pote
 Navigate through the document using the following links: 
 - [Overview of Ethical AI: Introductory Concepts ](#introductory-concepts)
 - [Ethical AI: A Shared Responsibility ](#ethical-ai-a-shared-responsibility)
-- [AI/ML at Census ](#ai-machine-learning-and-the-US-census-bureau)
+- [Machine Learning and Government](#machine-learning-and-government)
 - [Why AI/ML at Census](#why-ai-ml-at-census)
+- Bias, Fairness, and 
 - [Principles of Ethical AI Systems in Government: A Practical View ](principles-of-ethical-ai-systems-in-government)
 - [Further Reading](further-reading)
 
