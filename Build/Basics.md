@@ -90,43 +90,30 @@ Given the fact that anything from bad data collection practices to problematic i
 
 The main principles of Ethical AI are shaped by the following concepts: 
 
-- Interpretability
-- Explainability 
-- Transparency
-- Trustworthiness
+- **Interpretability**
+- **Explainability** 
+- **Transparency**
+- **Trustworthiness**
 
-First, Interpretability: Interpretable AI systems are those that create output that depends on input in a way that can be recognized or predicted by human beings. 
+First, *Interpretability*: Interpretable AI systems are those that create output that depends on input in a way that can be recognized or predicted by human beings. 
 
 In other words, if a team at Census creates a model to predict future housing prices, and one of the features used to build the model is literacy rate, a (locally) interpretable model could be one for which a person can predict with reasonable confidence the change in housing prices that result from increasing the literacy rate in a geographic region.
 
-Explainability: Although used mistakenly as a synonym for “interpretability”, explainability is a distinct concept. 
+*Explainability*: Although used mistakenly as a synonym for “interpretability”, explainability is a distinct concept. Rather than model output, it relates to the internal structure of the model itself. If a human can explain how a model works and why, without relying on sensitivity of output as in interpretability, then we can call that model "explainable."
 
-Government, including untis of the Department of Commerce, has thought deeply about Explainable AI, which will require specific guidance to agencies and federal contractors and vendors working with government to develop standards and guidance for ethics, privacy and so on, in collaboration with outside research organizations and academia, which have not yet converged on a consensus definition for explainability. DARPA's [Explainable AI program, XAI]https://www.darpa.mil/program/explainable-artificial-intelligence) endeavors to fund reseaerch and testing and training programs and certification standards for government tecnhnology. Establish Standards and Guidance to Navigate Risks.  
+One of the interesting aspects of explainability that we delve into elsewhere in this toolkit is the idea that there might be some tradeoff between explainability and accuracy, because simpler models tend to be more explainable in a sense. The existence of this tradeoff is debated within the AI research community, however.
+
+*Transparency* 
+
+*Trustworthiness*:  Trustworthy systems, as outlined in a response to a Federal Executive Order by the Secretary of Commerce, combines several of the above principles.
+“Trustworthy AI systems,” as defined by the government’s [Plan for Federal Engagement in Developing AI Technical Standards and Related Tools](https://www.nist.gov/topics/artificial-intelligence/plan-federal-engagement-developing-ai-technical-standards-and-related), are those that meet a set of standards across several dimensions:  accuracy, explainability, resiliency, safety, reliability, objectivity, and security. Some of these standards are works in progress, and may vary by agency, problem setting, model type, various particulars of an application, etc. 
+
+Government, including untis of the Department of Commerce, has thought deeply about trustworthiness, including explainable AI, which will require specific guidance to agencies and federal contractors and vendors working with government to develop standards and guidance for ethics, privacy and so on, in collaboration with outside research organizations and academia, which have not yet converged on a consensus definition for explainability. DARPA's [Explainable AI program, XAI]https://www.darpa.mil/program/explainable-artificial-intelligence) endeavors to fund reseaerch and testing and training programs and certification standards for government tecnhnology. Establish Standards and Guidance to Navigate Risks.  
 
 National Institute of Standards, another unit of the Department of Commerce, has begun outlining standards for government AI, including ensuring ethical and trustworthy systems, as outlined in its evolving [Plan for Leadership in AI](https://www.nist.gov/system/files/documents/2019/08/10/ai_standards_fedengagement_plan_9aug2019.pdf). Contributing to this stream of policy work and research are NIST's recent Workshops on [Exploring AI Trustworthiness](https://www.nist.gov/news-events/events/2020/08/exploring-ai-trustworthiness-workshop-series-kickoff-webinar), [Bias in AI](https://www.nist.gov/news-events/events/2020/08/bias-ai-workshop), and [2021 Workshop on Explainable AI](https://www.nist.gov/news-events/events/2021/01/explainable-ai-workshop).  
 
 
-Transparency -- definition
-Trustworthy systems, as outlined in a response to a Federal Executive Order by the Secretary of Commerce, combines several of the above principles
-“Trustworthy AI systems,” as defined by the government’s “Plan for Federal Engagement in Developing AI Technical Standards and Related Tools,”  are those that meet a set of standards across several dimensions:  accuracy, explainability, resiliency, safety, reliability, objectivity, and security
 
-
-
-
-
-
-What do we mean when we say artificial intelligence or machine learning?
-
-How do we define what makes a “Good” model?
-
-How do we define what makes a “Biased” or “Fair” model?
-
-	One of the most confusing aspects of bias and fairness for newcomers to the AI Ethics space is that there is no universally-held, consensus definition of either. 
-
-Where might bias arise?
-
-
-How might AI bias impact government contexts in particular?
 
 
 Equity in delivery of services
