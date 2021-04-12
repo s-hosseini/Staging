@@ -23,23 +23,23 @@ In order to understand AI Ethics material shared in this resource, it is essenti
 
 **Natural Language Processing**: An example common NLP task is sentiment analysis of user comments in a post-service survey to gauge user satisfaction with government services. Natural language processing is a branch of artificial intelligence, distinct from machine learning, describing a series of methods that enable the analysis, interpretation, and manipulation of various aspects of written and spoken human language. A closely-linked term is **Natural Language Generation**, which refers to the field encompassing various computer-based methods use dto generate "human" language. 
 
-Computer Vision: 
+**Computer Vision**: The field of AI that develops techniques to "teach" computers to process, understand, analyze, and manipulate images and videos. Facial recognition technologies deployed by law enforcement agencies around the world are build on a core of computer vision techniques. Optical Character Recognition (OCR) used to extract machine-readable text from tables in PDFs is one example of how computer vision could be used around the Census Bureau.
 
-Accuracy: 
+**Model Accuracy**: 
 
-Robustness: 
+**Model Training**: Training is the process of developing a model by exposing it to labeled examples (training data) in order for it to “learn” how the features relate to the labels.
 
-Model Deployment: 
+**Model Deployment**: One of the last steps of the ML development process. Deploying your model means putting it into a production environment, such that it can be accessed by others (for example, through an API) and begins making decisions/predictions using "real" data post-training and testing. Models still require testing and maintenance and possible retraining post-deployment.
 
-Features: Input to the model. 
+**Features**: Input to an AI/ML model. For instance, features a model build to predict economic mobility of a population could include educational attainment and work history.  The process of extracting features from data, which could include complex processing, is known as **feature engineering.** Features can be categorical (a set of occupations) or continuous (income), and could also be images, such as in computer vision.
 
-Labels: What a model is trying to predict; model output. 
+**Labels**: What a model is trying to predict; model output. 
 
-Model Training: Training is the process of developing a model by exposing it to labeled examples (training data) in order for it to “learn” how the features relate to the labels.
 
-Bias: 
 
-Fairness: 
+**Bias**: 
+
+**Fairness**: 
 
 
 
