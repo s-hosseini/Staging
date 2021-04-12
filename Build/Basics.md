@@ -46,54 +46,17 @@ In order to understand AI Ethics material shared in this resource, it is essenti
 **Bias**: In the AI Ethics sense, bias refers to errors introduced to an AI system because of bad data collection, cleaning, sampling, reporting, or other technical pipeline-related failures, or a general favoritism or unfairness introduced by either algorithm or data for or against some (sub)populations in the dataset. If a system for accessing government services relies on facial recognition technology, and the computer vision algorithms underlying this technology have not been trained on images of people with darker skin, then that technology might enact a bias against darker-skinned people trying to access that service, excluding them because it cannot recognize their faces.  
 
 
-
-
-
-A Learner or Machine Learning Algorithm is the program used to learn a machine learning model from data. Another name is "inducer" (e.g. "tree inducer").
-A Machine Learning Model is the learned program that maps inputs to predictions. This can be a set of weights for a linear model or for a neural network. Other names for the rather unspecific word "model" are "predictor" or - depending on the task - "classifier" or "regression model". In formulas, the trained machine learning model is called 
-.
-
-FIGURE 1.1: A learner learns a model from labeled training data. The model is used to make predictions.
-A Black Box Model is a system that does not reveal its internal mechanisms. In machine learning, "black box" describes models that cannot be understood by looking at their parameters (e.g. a neural network). The opposite of a black box is sometimes referred to as White Box, and is referred to in this book as interpretable model. Model-agnostic methods for interpretability treat machine learning models as black boxes, even if they are not.
-
-Interpretable Machine Learning refers to methods and models that make the behavior and predictions of machine learning systems understandable to humans.
-A Dataset is a table with the data from which the machine learns. The dataset contains the features and the target to predict. When used to induce a model, the dataset is called training data.
-An Instance is a row in the dataset. Other names for 'instance' are: (data) point, example, observation. An instance consists of the feature values 
-
-The Features are the inputs used for prediction or classification. A feature is a column in the dataset. Throughout the book, features are assumed to be interpretable, meaning it is easy to understand what they mean, like the temperature on a given day or the height of a person. The interpretability of the features is a big assumption. But if it is hard to understand the input features, it is even harder to understand what the model does. The matrix with all features is called X and 
- for a single instance. The vector of a single feature for all instances is 
-
- and the value for the feature j and instance i is 
-
-xj(i)
-.
-The Target is the information the machine learns to predict. In mathematical formulas, the target is usually called y or 
-y
-i
-yi
- for a single instance.
-A Machine Learning Task is the combination of a dataset with features and a target. Depending on the type of the target, the task can be for example classification, regression, survival analysis, clustering, or outlier detection.
-The Prediction is what the machine learning model "guesses" what the target value should be based on the given features. In this book, the model prediction is denoted by 
-^
-f
-(
-x
-(
-i
-)
-)
-f^(x(i))
- or 
-^
-y
-y^
-.
-
-
 <img width="402" alt="image" src="https://user-images.githubusercontent.com/80533280/114315080-444f0500-9acb-11eb-87db-df3d3ac3cd02.png">
 
 
 <!-- https://docs.google.com/drawings/d/1N6hKXUiWYiW_M9M9tvCPJNXrB-w_TyY_yn_H-yA7Mr8/edit -->
+
+
+# Ethical AI: A Shared Responsibility
+
+One reason this shared resources includes material for people across the spectrum of technical knowledge and ML expertise is that building or buying and deploying truly ethical AI systems requires the involvement of many stakeholders. It is absolutely essential to involve subject matter and domain experts who may be nontechnical, but whose mastery of data and agency processes and systems is superior to that of anyone else, or who have an intuition for what outcomes might be biased or unfair for a specific problem setting. Furthermore, ethical assessment, building, and testing for AI/ML systems is an enormously complex undertaking must necessarily encompass stakeholders across agencies, and that requires constant testing, data refreshing, and general vigilance post-deployment. Thus, it is important to educate all federal employees, contractors, and vendors interfacing with any any aspect of AI system design, deployment, application in the field, or acquisiton purchases, in some of the basics introduced in this document. 
+
+
 
 # Machine Learning and the US Census Bureau
 
