@@ -9,7 +9,7 @@ Navigate through the document using the following links:
 - [Ethical AI: A Shared Responsibility ](#ethical-ai-a-shared-responsibility)
 - [Machine Learning and Government](#machine-learning-and-government)
 - [Why AI at Census?](#why-ai-at-census)
-- [Principles of Ethical AI Systems in Government](principles-of-ethical-ai-systems-in-government)
+- [Principles of Ethical AI Systems in Government](#principles-of-ethical-ai-systems-in-government)
 
 
 
