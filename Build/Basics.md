@@ -77,11 +77,11 @@ To extract value from this data, Census uses a range of computational tools and 
 
 How is machine learning used at Census? Some examples of machine learning use cases across the Bureau are: Estimating people’s or businesses’ propensity to respond to surveys in certain Census tracts; building automatic classifiers for various survey elements, saving humans many hours of hand-coding; use satellite images to supplement traditional survey instruments in estimating population size and growth. Outside of survey-focused project work, Census could conceivably use several well-established machine learning techniques to create more robust search capabilities for public resources accessed through www.census.gov. AI/ML could also be leveraged to power operational effiency, such as with automatic mapping of skillsets or datasets around the Bureau as inferred directory and publication authoriship information;  automatic labelling of images and tables hosted on the Census website with captions using natural language generation based on transformers; and the rapid cleaning of data from disparate sources before combining into one dataset. 
 
+#Bias, Fairness, and AI Ethical Concerns in Government
 
+Government has an obvious obligation to ensure robust and accurate yet fair AI systems, such that benefits adjudication, survey data collection, standardization, and analysis, and other common AI/ML with public sector applications do not introduce, perpetuate, or amplify biases against any particular group of people, whether these biases reflect human cognitive distortions that seeps into data, labelling, or modeling, or they are introduced purely by model or computation. This obligation is enshrined in policy documents like the recent [White House Executive Order on Trustworthy AI](https://www.federalregister.gov/documents/2020/12/08/2020-27065/promoting-the-use-of-trustworthy-artificial-intelligence-in-the-federal-government).  
 
-
-
-Building robust yet fair and unbiased AI, systems can seem challenging. Before going any further, we outline the general characteristics of “ethical” AI systems. 
+Given the fact that anything from bad data collection practices to problematic interactions AI systems to poor judgment about what fairness entails can lead to biased system output, building "ethical" AI systems can seem daunting to government development teams. One Before going any further, we outline the general characteristics of “ethical” AI systems. 
 
 
 Interpretability: Interpretable AI systems are those that create output that depends on input in a way that can be recognized or predicted by human beings. 
