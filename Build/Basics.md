@@ -25,7 +25,14 @@ In order to understand AI Ethics material shared in this resource, it is essenti
 
 **Computer Vision**: The field of AI that develops techniques to "teach" computers to process, understand, analyze, and manipulate images and videos. Facial recognition technologies deployed by law enforcement agencies around the world are build on a core of computer vision techniques. Optical Character Recognition (OCR) used to extract machine-readable text from tables in PDFs is one example of how computer vision could be used around the Census Bureau.
 
-**Model Accuracy**: 
+**Model Accuracy**: Percentage of correct predictions to predictions made overall by a classifier model. There are various accuracy metrics that can be used, usually as some combination of proportions of true and false negatives and positives. One common way of representing a model's accuracy in classification tasks is a **confusion matrix** -- essentially a table of false positives and negatives (see below).
+
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/80533280/114404662-e62a2c80-9b73-11eb-90d6-adb4c34ea7be.png">
+
+
+
+**Deep Learning**: An artificial intelligence model that relies on multiple layers of neural networks --  collections of nodes modeled on neurons in the human brain -- each of which transforms the input data in progressively more abstract ways. Examples of deep learning networks are RNNs, or recurrent neural nets, used in language applications, and CNNs, or convolutional neural nets, which are used most commonly in computer vision applications. Deep learning's utility lies in the fact that these models automatically detect features, so that the user does not have to create or engineer them.
 
 **Model Training**: Training is the process of developing a model by exposing it to labeled examples (training data) in order for it to “learn” how the features relate to the labels.
 
@@ -34,7 +41,6 @@ In order to understand AI Ethics material shared in this resource, it is essenti
 **Features**: Input to an AI/ML model. For instance, features a model build to predict economic mobility of a population could include educational attainment and work history.  The process of extracting features from data, which could include complex processing, is known as **feature engineering.** Features can be categorical (a set of occupations) or continuous (income), and could also be images, such as in computer vision.
 
 **Labels**: What a model is trying to predict; model output. 
-
 
 
 **Bias**: 
