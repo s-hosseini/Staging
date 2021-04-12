@@ -43,9 +43,7 @@ In order to understand AI Ethics material shared in this resource, it is essenti
 **Labels**: What a model is trying to predict; model output. 
 
 
-**Bias**: 
-
-**Fairness**: 
+**Bias**: In the AI Ethics sense, bias refers to errors introduced to an AI system because of bad data collection, cleaning, sampling, reporting, or other technical pipeline-related failures, or a general favoritism or unfairness introduced by either algorithm or data for or against some (sub)populations in the dataset. If a system for accessing government services relies on facial recognition technology, and the computer vision algorithms underlying this technology have not been trained on images of people with darker skin, then that technology might enact a bias against darker-skinned people trying to access that service, excluding them because it cannot recognize their faces.  
 
 
 
