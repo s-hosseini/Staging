@@ -11,7 +11,7 @@ Navigate through the document using the following links:
 - [Why AI/ML at Census](#why-ai-ml-at-census)
 - [Bias, Fairness, and AI Ethical Concerns in Government](#Bias-Fairness-and-AI-Ethical-Concerns-in-Government)
 - [Principles of Ethical AI Systems in Government: A Practical View ](principles-of-ethical-ai-systems-in-government)
-- [Further Reading](further-reading)
+
 
 
 ## Introductory Concepts 
@@ -99,11 +99,11 @@ First, *Interpretability*: Interpretable AI systems are those that create output
 
 In other words, if a team at Census creates a model to predict future housing prices, and one of the features used to build the model is literacy rate, a (locally) interpretable model could be one for which a person can predict with reasonable confidence the change in housing prices that result from increasing the literacy rate in a geographic region.
 
-*Explainability*: Although used mistakenly as a synonym for “interpretability”, explainability is a distinct concept. Rather than model output, it relates to the internal structure of the model itself. If a human can explain how a model works and why, without relying on sensitivity of output as in interpretability, then we can call that model "explainable."
+*Explainability*: Although used mistakenly as a synonym for “interpretability”, explainability is a distinct concept. Rather than model output, it relates to the internal structure of the model itself. If a human can explain how a model works and why, without relying on sensitivity of output as in interpretability, then we can call that model "explainable." Methods for assessing explainability can include statistical assessments. 
 
 One of the interesting aspects of explainability that we delve into elsewhere in this toolkit is the idea that there might be some tradeoff between explainability and accuracy, because simpler models tend to be more explainable in a sense. The existence of this tradeoff is debated within the AI research community, however.
 
-*Transparency* 
+*Transparency* is the property of explainability that is attained by  using models that are easily interpreted or intuitive to humans -- for example, random forest or linear models.
 
 *Trustworthiness*:  Trustworthy systems, as outlined in a response to a Federal Executive Order by the Secretary of Commerce, combines several of the above principles.
 “Trustworthy AI systems,” as defined by the government’s [Plan for Federal Engagement in Developing AI Technical Standards and Related Tools](https://www.nist.gov/topics/artificial-intelligence/plan-federal-engagement-developing-ai-technical-standards-and-related), are those that meet a set of standards across several dimensions:  accuracy, explainability, resiliency, safety, reliability, objectivity, and security. Some of these standards are works in progress, and may vary by agency, problem setting, model type, various particulars of an application, etc. 
@@ -113,14 +113,6 @@ Government, including untis of the Department of Commerce, has thought deeply ab
 National Institute of Standards, another unit of the Department of Commerce, has begun outlining standards for government AI, including ensuring ethical and trustworthy systems, as outlined in its evolving [Plan for Leadership in AI](https://www.nist.gov/system/files/documents/2019/08/10/ai_standards_fedengagement_plan_9aug2019.pdf). Contributing to this stream of policy work and research are NIST's recent Workshops on [Exploring AI Trustworthiness](https://www.nist.gov/news-events/events/2020/08/exploring-ai-trustworthiness-workshop-series-kickoff-webinar), [Bias in AI](https://www.nist.gov/news-events/events/2020/08/bias-ai-workshop), and [2021 Workshop on Explainable AI](https://www.nist.gov/news-events/events/2021/01/explainable-ai-workshop).  
 
 
-
-
-
-Equity in delivery of services
-Acquisition
-
-
-# Further Reading
 
 
 
